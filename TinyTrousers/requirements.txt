@@ -1,7 +1,2 @@
-name: tinytrousers
-dependencies:
-  - python=3.13
-  - pip
-  - pip:
-      - boto3
-      - pytes
+pytest
+boto3
