@@ -7,7 +7,7 @@ It is on-demand delivery of IT resources (storage, compute power, databases) ove
 * Broad Network Access: The users are able to access the cloud services via portable devices uses a local network.
 * Resource Pooling: he cloud provider uses a multi-tenant model to serve multiple customers by dynamically allocating and reallocating resources based on demand, while ensuring security and privacy.
 * Rapid elasticity: Cloud resources can be automatically scaled up or down to accommodate workload fluctuations, ensuring optimal performance and cost efficiency.
-* Measured service: Cloud usage is metered, meaning users are charged based on what they consume (e.g., storage, bandwidth, or computing power), promoting cost-effectiveness and transparency [see] (https://www.synopsys.com/blogs/chip-design/essential-cloud-computing-characteristics.html).
+* Measured service: Cloud usage is metered, meaning users are charged based on what they consume (e.g., storage, bandwidth, or computing power), promoting cost-effectiveness and transparency [see](https://www.synopsys.com/blogs/chip-design/essential-cloud-computing-characteristics.html).
 
 ## Cloud Service Models:
 There are three main types of the cloud computing
