@@ -1,6 +1,14 @@
 # Clouds Basic:
 It is on-demand delivery of IT resources (storage, compute power, databases) over the internet. Instead of managing the hardware, clouds providers offer services for rent like AWS, Azure, or Google Cloud.
 
+## Five Essential Characteristics of Cloud Computing:
+* On-Demand: Users can provision and manage computing resources (such as storage and processing power) as needed, without requiring human intervention from the provider.
+* self-Service: By going through the provider's web server, user can see and manage their usage.
+* Broad Network Access: The users are able to access the cloud services via portable devices uses a local network.
+* Resource Pooling: he cloud provider uses a multi-tenant model to serve multiple customers by dynamically allocating and reallocating resources based on demand, while ensuring security and privacy.
+* Rapid elasticity: Cloud resources can be automatically scaled up or down to accommodate workload fluctuations, ensuring optimal performance and cost efficiency.
+* Measured service: Cloud usage is metered, meaning users are charged based on what they consume (e.g., storage, bandwidth, or computing power), promoting cost-effectiveness and transparency [see] (https://www.synopsys.com/blogs/chip-design/essential-cloud-computing-characteristics.html).
+
 ## Cloud Service Models:
 There are three main types of the cloud computing
 * `IaaS` Infrastructure as a Service: Virtual servers, networking, and storage (e.g., AWS EC2, Google computing Engine)
