@@ -13,7 +13,7 @@ It is on-demand delivery of IT resources (storage, compute power, databases) ove
 There are three main types of the cloud computing
 * `IaaS` Infrastructure as a Service: Virtual servers, networking, and storage (e.g., AWS EC2, Google computing Engine)
 * `PaaS` Platform as a Service: Provides a platform for developers to build applications (e.g., AWS Elastic Beanstalk, Google App Engine)
-* `SaaS` Software as a Service: Fully managed application available via the internet (e.g., Gmail, Dropbox. AWS Workspaces)
+* `SaaS` Software as a Service: Fully managed application available via the internet (e.g., Gmail, Dropbox, AWS Workspaces)
 
 ## Cloud Deployment Models:
 * Public Cloud: services are owned and operated by a third-party (AWS, Google Cloud, Azure)
@@ -53,3 +53,36 @@ AWS (Amazon Web Service) provides overs 200 cloud services.
 * Use `IAM` roles instead of access keys.
 * Enable `MFA` (Multi-Factor Authentication)
 * Use least privilege principle (granted only necessary permissions)
+
+## Object Storage vs. File Storage:
+**Object Storage:**
+- Data stored as objects with metadata and a unique identifier.
+- Best suited for unstructured data like images, videos, and backups.
+- Highly salable and accessed via APIs (AWS S3. Google Cloud Storage).
+- Provides redundancy and high availability across multiple data centers.
+
+**File Storage:**
+- Data is stored in a hierarchical structure using directories and files.
+- Best suited for structured data and applications requiring file access (e.g., shared drives, databases).
+- Requires a file system (e.g., NFS, SMB) and is typically used in on-premise or hybrid environments.
+- Limited scalability compared to object storage.
+
+## Cold Storage vs Hot Storage:
+**Cold Storage:**
+- Used for long-tern archival and infrequently accessed data.
+- Lower cost, but higher latency (retrieving data can take hours or days).
+- Examples: AWS Glacier, Google Coldline. Azure Archive Storage.
+
+**Hot Storage:**
+- Designed for frequently accessed data with low latency.
+- Higher performance but also higher cost.
+- Examples: AWS S3 Standard, Google Nearline, Azure Blob Hot Tier.
+
+## Security Risks in Cloud Computing:
+1. Data Breaches: Unauthorized access due to weak authentication or misconfiguration permissions.
+2. Data Loss: Accidental deletion, cyberattacks, or provider failures.
+3. Insider Threats: Malicious from employees or compromised credentials.
+4. Denial of Service (DoS) Attacks: Overloading cloud resources to disrupt service availability.
+5. Shared Technology Risks: Multi-tenant environments can introduce security vulnerability.
+6. Compliance Issues: Cloud providers may not always comply with regional data protection laws (e.g., GDPR, HIPAA).
+7. Misconfiguration: Poorly set access controls can expose sensitive data to the public.
