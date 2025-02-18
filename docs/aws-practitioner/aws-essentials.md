@@ -1,4 +1,5 @@
 # Notes from AWS Cloud Practitioner Essentials
+[Text are from AWS, otherwise mentioned]
 
 ## Client-Server Model:
 The client–server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients [wiki].
@@ -54,3 +55,38 @@ When a user tries to access a website or file, several steps occur in the backgr
 4. Use more, pay less!
 5. Speed up as you in run!
 6. Be Marco Polo!
+
+
+## Elastic Cloud Computing (**EC2**):
+Amazon EC2 offers the broadest and deepest compute platform, with over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. We are the first major cloud provider that supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking. We offer the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud. More SAP, high performance computing (HPC), ML, and Windows workloads run on AWS than any other cloud.
+
+**Benefits of EC2:**
+1. Access reliable, scalable (SLA) infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
+2. Provide secure compute for your applications. Security is built into the foundation of Amazon EC2 with the `AWS Nitro` System,
+    * The Nitro System is a collection of hardware and software components built by AWS that enable high performance, high availability, and high security. 
+3. Optimize performance and cost: Migrate and build apps with ease using AWS Migration Tools, AWS Managed Services, or `Amazon Lightsail`. Learn how AWS can help:
+    * Amazon Lightsail is a powerful virtual server that is built for reliability and performance. Intuitive management console with preconfigured Linux and Windows application stacks. Virtual private Cloud. Easily Manage Clusters. No Upfront Commitment. Highly Scalable.
+
+
+## Amazon EC2 Instance Types:
+1. **General purpose instances:**
+    * Application servers,
+    * Gaming servers,
+    * Backend servers for enterprise applications,
+    * Small and medium databases.
+2. **Compute optimized instances:**
+    * Dedicated and compute-intensive applications.
+3. **Memory optimized instances:**
+    * Large datasets,
+    * High-performance database in real-time processing.
+4. **Accelerated computing instances:**
+    *  floating-point number calculations,
+    * Graphics processing,
+    * Data pattern matching.
+5. **Storage optimized instances:**
+    * High, sequential read and write access to large datasets
+    * Distributed file systems,
+    * Data warehousing applications,
+    * High-frequency online transaction processing (OLTP) systems.
+    * are designed to deliver tens of thousands of low-latency, random input/output operations per second (IOPS) to applications. 
+
