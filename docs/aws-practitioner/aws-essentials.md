@@ -130,6 +130,9 @@ Also, one can use both of these options simultaneously.
 * **Desired Capacity** is the number of instances desired to have for the application.
 * **Maximum Capacity** is the maximum number of the instances can run for the application.
 
+---
+
+## Elastic Load Balancing (ELB)
 **Load Balancing**
 
 Load balancing involves allocating a group of tasks among multiple computing resources to enhance overall processing efficiency [wiki].
@@ -158,8 +161,6 @@ Load balancing involves allocating a group of tasks among multiple computing res
   - Directs client requests to servers located closer to them, thereby reducing latency.
   - Guarantee that both physical and virtual computing resources operate reliably and perform at their best.
 
-
-## Elastic Load Balancing (ELB)
 ELB is an AWS service designed to automatically distribute incoming application traffic across multiple resources, such as Amazon EC2 instances. It functions as a single point of contact for all incoming web traffic directed to your Auto Scaling group.
 
 **Key Use Cases:**
@@ -172,4 +173,3 @@ ELB is an AWS service designed to automatically distribute incoming application 
 
 - **Preserve Existing Network Appliances:**  
   Deploy your preferred vendor's network appliances while leveraging the scalability and flexibility provided by the cloud.
-  
