@@ -11,8 +11,8 @@ When a user tries to access a website or file, several steps occur in the backgr
 
    1. The user enters a URL (Uniform Resource Locator) into their web browser. This prompts the browser to send a request to the DNS (Domain Name System) server to locate the corresponding web server.
    2. The DNS server searches for the IP address linked to the requested domain.
-   3. Once found, the DNS server returns the web server’s IP address to the browser.
-   4. The browser then sends an HTTP/HTTPS request to the identified web server’s IP address.
+   3. Once found, the DNS server returns the web server's IP address to the browser.
+   4. The browser then sends an HTTP/HTTPS request to the identified web server's IP address.
    5. The web server processes the request and responds by sending the required files (such as HTML, CSS, JavaScript, and media files) back to the browser.
    6. The browser interprets these files and constructs the webpage using various components:
       *  DOM (Document Object Model) interpreter for structuring the page.
@@ -98,17 +98,17 @@ Amazon EC2 offers the broadest and deepest compute platform, with over 750 insta
     * No upfront payments.
 - **Savings Plans:**
     * For commitment usage for one or three-year term.
-    * Can lead to $72%$ saving.
+    * Can lead to $72\%$ saving.
 - **Reserved Instances:**
     * For one or three-year commitment,
     * For steady-state workload,
-    * Up to $75%$ less versus On-Demand,
+    * Up to $75\%$ less versus On-Demand,
     *  Three options:
         - All upfront,
         - Partial upfront,
         - No upfront at the beginning.
 - **Spot Instances:**
-    * Up to $90%$ less than On-Demand,
+    * Up to $90\%$ less than On-Demand,
     * AWS can reclaim the instance at any time they need it, with two mins warning!
     * Resumable.
 - **Dedicated Hosts:**
