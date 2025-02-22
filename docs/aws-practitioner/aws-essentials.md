@@ -115,3 +115,61 @@ Amazon EC2 offers the broadest and deepest compute platform, with over 750 insta
     * Dedicated for use in EC2,
     * Exclusive to spacial needs,
     * No share tendency of the host.
+
+## Scalability:
+It involves beginning with only the resources that needed at the time being. Also, AWS service provides an automization option for auto scaling: **Amazon EC2 Auto Scaling**.
+
+### Amazon EC2 Auto Scaling
+EC2 offers two approaches:
+* Dynamic scaling responds to changing demand,
+* Predictive scaling automatically schedules the right number of Amazon EC2 instances based on the predicted demand.
+
+Also, one can use both of these options simultaneously.
+
+* **Minimum Capacity** is the Amazon EC2 instances that lunch immediately after the Auto Scaling group is created.
+* **Desired Capacity** is the number of instances desired to have for the application.
+* **Maximum Capacity** is the maximum number of the instances can run for the application.
+
+**Load Balancing**
+
+Load balancing involves allocating a group of tasks among multiple computing resources to enhance overall processing efficiency [wiki].
+
+**Advantages of Load Balancing:**
+
+- **Enhanced Application Availability:**
+  - Enables maintenance or upgrades on application servers without causing downtime.
+  - Offers automatic disaster recovery by rerouting traffic to backup sites.
+  - Regularly checks system health to preemptively address issues that might lead to downtime.
+
+- **Improved Application Scalability:**
+  - Eliminates traffic bottlenecks by preventing overload on any single server.
+  - Anticipates traffic patterns, allowing for the flexible addition or removal of servers as needed.
+  - Incorporates redundancy into the system, ensuring reliable scalability.
+
+- **Strengthened Application Security:**
+  - Mitigates attacks by managing millions of simultaneous requests.
+  - Monitors incoming traffic to identify and block malicious content.
+  - Automatically diverts attack traffic across multiple backend servers to minimize its impact.
+  - Channels traffic through a series of network firewalls for added protection.
+
+- **Boosted Application Performance:**
+  - Enhances response times, leading to better overall performance.
+  - Balances loads evenly across servers to optimize efficiency.
+  - Directs client requests to servers located closer to them, thereby reducing latency.
+  - Guarantee that both physical and virtual computing resources operate reliably and perform at their best.
+
+
+## Elastic Load Balancing (ELB)
+ELB is an AWS service designed to automatically distribute incoming application traffic across multiple resources, such as Amazon EC2 instances. It functions as a single point of contact for all incoming web traffic directed to your Auto Scaling group.
+
+**Key Use Cases:**
+
+- **Modernize Applications with Serverless and Containers:**  
+  Easily scale contemporary applications to meet demand without the need for complex configurations or additional API gateways.
+
+- **Enhance Hybrid Cloud Network Scalability:**  
+  Efficiently balance loads across both AWS and on-premises resources using a unified load balancer.
+
+- **Preserve Existing Network Appliances:**  
+  Deploy your preferred vendor's network appliances while leveraging the scalability and flexibility provided by the cloud.
+  
