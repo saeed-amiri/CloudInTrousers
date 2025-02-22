@@ -98,17 +98,17 @@ Amazon EC2 offers the broadest and deepest compute platform, with over 750 insta
     * No upfront payments.
 - **Savings Plans:**
     * For commitment usage for one or three-year term.
-    * Can lead to $72\%$ saving.
+    * Can lead to $72\\%$ saving.
 - **Reserved Instances:**
     * For one or three-year commitment,
     * For steady-state workload,
-    * Up to $75\%$ less versus On-Demand,
+    * Up to $75\\%$ less versus On-Demand,
     *  Three options:
         - All upfront,
         - Partial upfront,
         - No upfront at the beginning.
 - **Spot Instances:**
-    * Up to $90\%$ less than On-Demand,
+    * Up to $90\\%$ less than On-Demand,
     * AWS can reclaim the instance at any time they need it, with two mins warning!
     * Resumable.
 - **Dedicated Hosts:**
