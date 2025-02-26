@@ -233,8 +233,7 @@ A well-structured monolith follows **lean development principles**, enabling a *
 
 #### **Amazon Simple Notification Service (SNS):**
 
-Fully managed Pub/Sub service for A2A and A2P messaging.
-
+**Fully managed Pub/Sub service for A2A and A2P messaging:**
     - **Publish-subscribe messaging**, or **pub/sub messaging**, is an asynchronous communication model that makes it easy for developers to build highly functional and architecturally complex applications in the cloud. In modern cloud architecture, applications are decoupled into smaller, independent building blocks called services. Pub/sub messaging provides instant event notifications for these distributed systems. It supports scalable and reliable communication between independent software modules.
     - **Application-to-Application (A2A)** Integration (or Enterprise Application Integration) connects applications and business processes within the same organization to streamline operations.
     - **Application-to-Person (A2P)** Messaging is the automated process of sending mobile messages from a business application to a user, typically for marketing or service notifications.
