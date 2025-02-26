@@ -217,9 +217,11 @@ Microservices introduce **operational complexity** with more components to test,
 A well-structured monolith follows **lean development principles**, enabling a **quick launch with minimal complexity**. Once successful, it can be **gradually refactored into microservices**. Premature microservices adoption can **waste engineering effort** if the application doesn’t succeed.
 
 ### **Amazon Simple Queue Service (SQS):**
+
 **SQS** allows you to send, store, and receive messages between software components at any volume. This is without losing messages or requiring other services to be available.
 
 #### **Benefits of Amazon SQS:**
+
 - Overhead made simple:
     * Eliminate overhead with no upfront costs and without needing to manage software or maintain infrastructure,
 - Reliability at scale:
@@ -230,6 +232,7 @@ A well-structured monolith follows **lean development principles**, enabling a *
     * Scale elastically and cost-effectively based on usage so you don’t have to worry about capacity planning and preprovisioning.
 
 #### **Amazon Simple Notification Service (SNS):**
+
 Fully managed Pub/Sub service for A2A and A2P messaging.
     - **Publish-subscribe messaging**, or **pub/sub messaging**, is an asynchronous communication model that makes it easy for developers to build highly functional and architecturally complex applications in the cloud. In modern cloud architecture, applications are decoupled into smaller, independent building blocks called services. Pub/sub messaging provides instant event notifications for these distributed systems. It supports scalable and reliable communication between independent software modules.
     - **Application-to-Application (A2A)** Integration (or Enterprise Application Integration) connects applications and business processes within the same organization to streamline operations.
