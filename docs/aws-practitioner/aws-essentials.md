@@ -165,11 +165,87 @@ ELB is an AWS service designed to automatically distribute incoming application 
 
 **Key Use Cases:**
 
-- **Modernize Applications with Serverless and Containers:**  
+- **Modernize Applications with Serverless and Containers:**
   Easily scale contemporary applications to meet demand without the need for complex configurations or additional API gateways.
 
-- **Enhance Hybrid Cloud Network Scalability:**  
+- **Enhance Hybrid Cloud Network Scalability:**
   Efficiently balance loads across both AWS and on-premises resources using a unified load balancer.
 
-- **Preserve Existing Network Appliances:**  
+- **Preserve Existing Network Appliances:**
   Deploy your preferred vendor's network appliances while leveraging the scalability and flexibility provided by the cloud.
+
+---
+
+## Messaging and Queuing
+
+### **Tightly Coupled Architecture [[CloudNative](https://glossary.cncf.io/tightly-coupled-architecture/)]**
+Tightly coupled architecture refers to a system where multiple application components are **highly interdependent**. Unlike loosely coupled architectures, any change in one component is likely to impact others. While this approach is often **easier to implement**, it can introduce risks such as **cascading failures** and reduced flexibility. Additionally, it requires **coordinated updates** across components, which can slow down development workflows.
+
+This architectural style is a **traditional approach** to building applications. While it does not always align with modern **microservices best practices**, it can still be beneficial in certain scenarios. Tightly coupled architectures are typically **simpler and faster to develop**, much like **monolithic applications**, making them advantageous for accelerating the **initial development process**.
+
+#### **Advantages [[Gik4Gik](https://www.geeksforgeeks.org/difference-between-loosely-coupled-and-tightly-coupled-multiprocessor-system/)]:**
+- **Faster Communication:** Processors share memory and use high-speed buses, enabling **efficient inter-processor communication**.
+- **Efficient Resource Sharing:** Shared memory and I/O devices allow **seamless data exchange** between processors.
+- **Optimized for Synchronized Tasks:** Ideal for **high-interaction workloads**, such as call centers or dispatch systems.
+
+#### **Disadvantages [[Gik4Gik](https://www.geeksforgeeks.org/difference-between-loosely-coupled-and-tightly-coupled-multiprocessor-system/)]:**
+- **High Cost:** Requires **specialized hardware and high-speed connections**, making implementation expensive.
+- **Limited Scalability:** Adding processors is **challenging** due to shared resource dependencies.
+- **Failure Impact:** A **single failure** in a processor or shared component can **disrupt the entire system**, reducing reliability
+
+### **Loosely Coupled Architecture [[CloudNative](https://glossary.cncf.io/tightly-coupled-architecture/)]**
+Loosely coupled architecture is a design approach where individual components of an application **function independently** of one another. Unlike tightly coupled systems, each component—often referred to as a **microservice**—is built to perform a **specific function** and can be utilized by multiple services without direct dependencies. While this architecture can take **longer to implement**, it offers significant advantages, especially as applications grow in complexity and scale.
+
+One of the key benefits of loosely coupled systems is that **teams can develop, deploy, and scale components independently**. This autonomy allows organizations to iterate quickly on specific features without disrupting the entire system. Additionally, development teams can be structured around their **expertise**, focusing on their individual service, leading to **faster innovation and more efficient workflows**.
+
+### **Microservices Architecture [[CloudNative](https://glossary.cncf.io/tightly-coupled-architecture/)]**
+Microservices architecture is a design approach that **breaks applications into independent services**, each handling a specific function. These services work together seamlessly, appearing as a single entity to the user. For example, **Netflix** utilizes microservices for authentication, search, and video previews, allowing independent updates and scaling.
+
+#### **Problem it Solves**
+Traditional **monolithic applications** require scaling the entire system even if demand increases for just one feature. This leads to **inefficient resource use**. In contrast, microservices enable **targeted scaling**, allowing individual components to handle increased demand without affecting the whole application.
+
+#### **Benefits**
+Microservices enable **faster deployments, independent scaling, and parallel development** by different teams. This approach enhances **modularity, maintainability, and agility**. However, it introduces **operational complexity**, as managing multiple services requires more infrastructure and monitoring.
+
+### **Monolithic Applications [[CloudNative](https://glossary.cncf.io/tightly-coupled-architecture/)]**
+A **monolithic application** integrates all functionality into a **single deployable program**. It is often the **simplest and fastest way** to build an application, but as complexity grows, maintenance becomes challenging. More developers working on the same codebase **increase the risk of conflicts and communication overhead**.
+
+#### **Problem it Addresses**
+Microservices introduce **operational complexity** with more components to test, deploy, and manage. Early in development, a monolithic approach helps **avoid unnecessary overhead** until the product proves its value.
+
+#### **How it Helps**
+A well-structured monolith follows **lean development principles**, enabling a **quick launch with minimal complexity**. Once successful, it can be **gradually refactored into microservices**. Premature microservices adoption can **waste engineering effort** if the application doesn’t succeed.
+
+### **Amazon Simple Queue Service (SQS):**
+**SQS** allows you to send, store, and receive messages between software components at any volume. This is without losing messages or requiring other services to be available.
+
+#### **Benefits of Amazon SQS:**
+- Overhead made simple:
+    * Eliminate overhead with no upfront costs and without needing to manage software or maintain infrastructure,
+- Reliability at scale:
+    * Reliably deliver large volumes of data, at any level of throughput, without losing messages or needing other services to be available.
+- Security:
+    * Securely send sensitive data between applications and centrally manage your keys using AWS Key Management.
+- Cost-effective scalability:
+    * Scale elastically and cost-effectively based on usage so you don’t have to worry about capacity planning and preprovisioning.
+
+#### **Amazon Simple Notification Service (SNS):**
+Fully managed Pub/Sub service for A2A and A2P messaging.
+    - **Publish-subscribe messaging**, or **pub/sub messaging**, is an asynchronous communication model that makes it easy for developers to build highly functional and architecturally complex applications in the cloud. In modern cloud architecture, applications are decoupled into smaller, independent building blocks called services. Pub/sub messaging provides instant event notifications for these distributed systems. It supports scalable and reliable communication between independent software modules.
+    - **Application-to-Application (A2A)** Integration (or Enterprise Application Integration) connects applications and business processes within the same organization to streamline operations.
+    - **Application-to-Person (A2P)** Messaging is the automated process of sending mobile messages from a business application to a user, typically for marketing or service notifications.
+
+
+Amazon SNS simplifies **A2A** messaging by separating publishers from subscribers, which supports microservices, distributed systems, and serverless applications. Messages are sent to Amazon SNS topics, where they can be filtered and delivered to subscribers like Lambda, Amazon SQS, or HTTP endpoints. If delivery fails, the messages are stored in a dead-letter queue for further analysis or reprocessing.
+
+Amazon SNS **A2P** messaging lets you to deliver notifications and alerts directly to your customers' mobile devices through SMS (Short Message Service). Using this feature, you can send push notifications to mobile apps, text messages to mobile phone numbers, and plain-text emails to email addresses. Additionally, you have the flexibility to distribute messages by using topics to reach multiple recipients, or publish messages directly to individual mobile endpoints for personalized communication.
+
+**Usage:**
+- Integrate your applications with FIFO messaging:
+    * Deliver messages in a strictly ordered, first in, first out (FIFO) manner to maintain accuracy and consistency across independent applications.
+- Learn more about message ordering and deduplication:
+    * Securely encrypt notification message delivery.
+- Encrypt messages with AWS Key Management Service (KMS), ensure traffic privacy with AWS PrivateLink, and control access with resource policies and tags.:
+    * Learn more about security and message encryption.
+- Capture and fan out events from over 60 AWS services:
+    * Fan out events across AWS categories, such as analytics, compute, containers, databases, IoT, machine learning (ML), security, and storage.
