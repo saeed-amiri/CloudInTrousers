@@ -249,3 +249,42 @@ Amazon SNS **A2P** messaging lets you to deliver notifications and alerts direct
     * Learn more about security and message encryption.
 - Capture and fan out events from over 60 AWS services:
     * Fan out events across AWS categories, such as analytics, compute, containers, databases, IoT, machine learning (ML), security, and storage.
+
+## **Additional Compute Services:**
+With EC2, user is responsible for:
+- Patching the instances when new software packages come out,
+- Setting up the scaling of those instances as well as ensuring that user has architected the solutions to be hosted in a highly available manner.
+
+The AWS solution is **Serverless Computing**
+
+### **Serverless:**
+Serverless means the user cannot see or access the underlying infrastructure or instances that are hosting the application, instead, AWS does:
+- Provisioning,
+- Scaling,
+- High availability,
+- Maintenance.
+
+AWS has several serverless compute options, such as **Lambda**.
+
+#### **Lambda:**
+AWS Lambda is a compute service that runs your code in response to events and automatically manages the compute resources, making it the fastest way to turn an idea into a modern, production, serverless applications.
+
+##### **Benefits of Lambda:**
+- No need for managing servers:
+    * Run code without provisioning or managing infrastructure. Simply write and upload code as a .zip file or container image.
+- Automatic scaling:
+    * Automatically respond to code execution requests at any scale, from a dozen events per day to hundreds of thousands per second.
+- Pay-as-you-go pricing:
+    * Save costs by paying only for the compute time you use—by the millisecond—instead of provisioning infrastructure upfront for peak capacity.
+- Performance optimization:
+    * Optimize code execution time and performance with the right function memory size. Respond to high demand in double-digit milliseconds with Provisioned Concurrency.
+
+##### **Use cases:**
+- Quickly process data at scale:
+    * Meet resource-intensive and unpredictable demand by using AWS Lambda to instantly scale out to more than 18k vCPUs. Build processing workflows quickly and easily with suite of other serverless offerings and event triggers.
+- Run interactive web and mobile backends:
+    * Combine AWS Lambda with other AWS services to create secure, stable, and scalable online experiences.
+- Enable powerful ML insights:
+    * Preprocess data before feeding it to your machine learning (ML) model. With Amazon Elastic File System (EFS) access, AWS Lambda handles infrastructure management and provisioning to simplify scaling.
+- Create event-driven applications:
+    * Build event-driven functions for easy communication between decoupled services. Reduce costs by running applications during times of peak demand without crashing or over-provisioning resources.
