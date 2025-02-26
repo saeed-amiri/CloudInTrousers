@@ -267,6 +267,14 @@ Serverless means the user cannot see or access the underlying infrastructure or 
 - High availability,
 - Maintenance.
 
+##### **Container:[wiki]**
+*In software engineering, containerization is operating-system–level virtualization or application-level virtualization over multiple network resources so that software applications can run in isolated user spaces called **containers** in any cloud or non-cloud environment, regardless of type or vendor.*
+
+*Each **container** is basically a fully functional and portable cloud or non-cloud computing environment surrounding the application and keeping it independent of other environments running in parallel.[3] Individually, each container simulates a different software application and runs isolated processes by bundling related configuration files, libraries and dependencies. But, collectively, multiple containers share a common operating system kernel (OS).*
+
+##### **Orchestration:**
+*In system administration, orchestration is the automated configuration, coordination,[1] deployment, development, and management of computer systems and software [wiki].*
+
 AWS has several serverless compute options, such as **Lambda**.
 
 #### **Lambda:**
@@ -291,3 +299,56 @@ AWS Lambda is a compute service that runs your code in response to events and au
     * Preprocess data before feeding it to your machine learning (ML) model. With Amazon Elastic File System (EFS) access, AWS Lambda handles infrastructure management and provisioning to simplify scaling.
 - Create event-driven applications:
     * Build event-driven functions for easy communication between decoupled services. Reduce costs by running applications during times of peak demand without crashing or over-provisioning resources.
+
+
+#### **Amazon Elastic Container Service (ECS):**
+Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service that helps you to more efficiently deploy, manage, and scale containerized applications.
+
+##### **Benefits of Amazon ECS:**
+- Launch containers at scale:
+    * Launch containers on AWS at scale without worrying about the underlying infrastructure.
+- Reduce costs with pay-as-you-go pricing:
+    * Reduce costs with automatic scaling and pay-as-you-go pricing across multiple AWS compute options.
+- Increase speed and agility:
+    * Deploy faster and focus on your applications by using Amazon ECS with AWS Fargate serverless compute for containers.
+- Optimize for security and compliance:
+    *Build on Amazon ECS with confidence, knowing that the security, compliance, and architecture meet regulatory standards.
+
+
+##### **Use cases:**
+- Modernize applications:
+    * Empower developers to build and deploy applications with enhanced security features in a fast, standardized, compliant, and cost-efficient manner with Amazon ECS.
+- Automatically scale web applications:
+    * Automatically scale and run web applications in multiple Availability Zones with the performance, scale, reliability, and availability of AWS.
+- Support batch processing:
+    * Plan, schedule, and run batch computing workloads across AWS services, including Amazon Elastic Compute Cloud (EC2), AWS Fargate, and Amazon EC2 Spot Instances.
+- Train NLP and AI/ML models:
+    * Train natural language processing (NLP) and other artificial intelligence (AI) / machine learning (ML) models without managing the infrastructure by using Amazon ECS with AWS Fargate.
+
+
+#### **Amazon Elastic Kubernetes Service (EKS):**
+*A **Kubernetes** is an open-source container orchestration system for automating software deployment, scaling, and management [wiki].*
+
+Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed Kubernetes service that enables you to run Kubernetes seamlessly in both AWS Cloud and on-premises data centers.
+
+##### **Benefits of Amazon EKS:**
+- Accelerate time to production:
+    * Streamline Kubernetes operations by automating cluster infrastructure management with just one click.
+- Run Kubernetes in any environment:
+    * Unify Kubernetes management across cloud, on-premises, and at edge locations, giving you flexibility to run your workloads anywhere.
+- Improve performance, availability, and resiliency:
+    * Automatically provision your infrastructure, dynamically scale resources, and continuously optimize costs.
+- Enhance security of your systems:
+    * Drive an enhanced security posture with operating system patches and updates, using ephemeral compute to limit security risks and leveraging native integrations with AWS security services. 
+
+##### **Use cases:**
+- Deploy across hybrid environments:
+    * Unify how you run applications across cloud and on-premises environments with Amazon EKS to accelerate your modernization initiatives.
+- Deploy high-performing large language models (LLMs):
+    * Deploy secure, scalable, and high-performing LLMs to drive generative AI applications for both training and inference, fully leveraging the capabilities of AWS infrastructure, including graphics processing unit (GPU) instances.
+- Build and run web applications:
+    * Create applications that automatically scale up and down and run in a highly available configuration across multiple Availability Zones (AZs) with out-of-the-box networking and security integrations.
+- Build a cloud-native platform:
+    * Use Amazon EKS to build standardized applications management environments for your development teams by seamlessly combining Cloud Native Computing Foundation (CNCF) technology with AWS services.
+- Deploy data solutions:
+    * Build scalable, high-performing, and cost-efficient data platforms on Amazon EKS with AWS-managed services or open source tools.
