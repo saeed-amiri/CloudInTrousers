@@ -2,7 +2,7 @@
 [Text are from AWS, otherwise mentioned]
 
 ## Client-Server Model:
-The client–server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients [wiki].
+*The client-server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called **clients** [wiki].*
 
 ## How the Browser Interacts With the Servers? [[see](https://www.geeksforgeeks.org/client-server-model/)]
 
@@ -19,7 +19,7 @@ When a user tries to access a website or file, several steps occur in the backgr
       *  CSS interpreter for styling and layout.
       *  JavaScript engine for dynamic interactions.
       *  These are optimized by JIT (Just-In-Time) compilation for better performance.
-    7. Finally, the fully rendered website is displayed to the user.
+   7. Finally, the fully rendered website is displayed to the user.
 
 ## Advantages and Disadvantages of the Client-Server Model
 **Advantages:**
@@ -37,35 +37,37 @@ When a user tries to access a website or file, several steps occur in the backgr
 
 
 ## Deployment Models for Cloud Computing:
-1. cloud-based:
+1. **cloud-based:**
     - Run all parts of the application in the cloud.
     - Migrate existing applications to the cloud.
     - Design and build new applications in the cloud.
-2. on-premises:
+2. **on-premises:**
     - Deploy resources by using virtualization and resource management tools.
     - Increase resource utilization by using application management and virtualization technologies.
-3. hybrid:
+3. **hybrid:**
     - Connect cloud-based resources to on-premises infrastructure.
     - Integrate cloud-based resources with legacy IT applications.
     
 ### Benefits of Cloud Computing:
 1. Pay for what you use!
 2. Pay when you use!
-3. No need to `alloc` or `malloc`!
+3. No need to `alloc` or `dealloc`!
 4. Use more, pay less!
 5. Speed up as you in run!
 6. Be Marco Polo!
 
 
 ## Elastic Cloud Computing (**EC2**):
-Amazon EC2 offers the broadest and deepest compute platform, with over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. We are the first major cloud provider that supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking. We offer the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud. More SAP, high performance computing (HPC), ML, and Windows workloads run on AWS than any other cloud.
+*Amazon EC2 offers the broadest and deepest compute platform, with over 750 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload.*
+*We are the first major cloud provider that supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking.*
+*We offer the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud. More SAP, high performance computing (HPC), ML, and Windows workloads run on AWS than any other cloud.*
 
 **Benefits of EC2:**
-1. Access reliable, scalable (SLA) infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
-2. Provide secure compute for your applications. Security is built into the foundation of Amazon EC2 with the `AWS Nitro` System,
+1. **Access reliable, scalable (SLA)** infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
+2. Provide **secure** compute for your applications. Security is built into the foundation of Amazon EC2 with the `AWS Nitro` System,
     * The Nitro System is a collection of hardware and software components built by AWS that enable high performance, high availability, and high security. 
-3. Optimize performance and cost: Migrate and build apps with ease using AWS Migration Tools, AWS Managed Services, or `Amazon Lightsail`. Learn how AWS can help:
-    * Amazon Lightsail is a powerful virtual server that is built for reliability and performance. Intuitive management console with preconfigured Linux and Windows application stacks. Virtual private Cloud. Easily Manage Clusters. No Upfront Commitment. Highly Scalable.
+3. **Optimize performance and cost:** Migrate and build apps with ease using AWS Migration Tools, AWS Managed Services, or `Amazon Lightsail`. Learn how AWS can help:
+    * `Amazon Lightsail` is a powerful virtual server that is built for reliability and performance. Intuitive management console with preconfigured Linux and Windows application stacks. Virtual private Cloud. Easily Manage Clusters. No Upfront Commitment. Highly Scalable.
 
 
 ## Amazon EC2 Instance Types:
@@ -88,7 +90,7 @@ Amazon EC2 offers the broadest and deepest compute platform, with over 750 insta
     * Distributed file systems,
     * Data warehousing applications,
     * High-frequency online transaction processing (OLTP) systems.
-    * are designed to deliver tens of thousands of low-latency, random input/output operations per second (IOPS) to applications. 
+    * Designed to deliver tens of thousands of low-latency, random input/output operations per second (IOPS) to applications. 
 
 ## Amazon EC2 Pricing:
 - **On-Demand:**
@@ -135,7 +137,7 @@ Also, one can use both of these options simultaneously.
 ## Elastic Load Balancing (ELB)
 **Load Balancing**
 
-Load balancing involves allocating a group of tasks among multiple computing resources to enhance overall processing efficiency [wiki].
+*Load balancing involves allocating a group of tasks among multiple computing resources to enhance overall processing efficiency [wiki].*
 
 **Advantages of Load Balancing:**
 
@@ -222,21 +224,21 @@ A well-structured monolith follows **lean development principles**, enabling a *
 
 #### **Benefits of Amazon SQS:**
 
-- Overhead made simple:
+- **Overhead made simple:**
     * Eliminate overhead with no upfront costs and without needing to manage software or maintain infrastructure,
-- Reliability at scale:
+- **Reliability at scale:**
     * Reliably deliver large volumes of data, at any level of throughput, without losing messages or needing other services to be available.
-- Security:
+- **Security:**
     * Securely send sensitive data between applications and centrally manage your keys using AWS Key Management.
-- Cost-effective scalability:
+- **Cost-effective scalability:**
     * Scale elastically and cost-effectively based on usage so you don’t have to worry about capacity planning and preprovisioning.
 
 #### **Amazon Simple Notification Service (SNS):**
 
-**Fully managed Pub/Sub service for A2A and A2P messaging:**
-- **Publish-subscribe messaging**, or **pub/sub messaging**, is an asynchronous communication model that makes it easy for developers to build highly functional and architecturally complex applications in the cloud. In modern cloud architecture, applications are decoupled into smaller, independent building blocks called services. Pub/sub messaging provides instant event notifications for these distributed systems. It supports scalable and reliable communication between independent software modules.
-- **Application-to-Application (A2A)** Integration (or Enterprise Application Integration) connects applications and business processes within the same organization to streamline operations.
-- **Application-to-Person (A2P)** Messaging is the automated process of sending mobile messages from a business application to a user, typically for marketing or service notifications.
+- **Fully managed Pub/Sub service for A2A and A2P messaging:**
+    - **Publish-subscribe messaging**, or **pub/sub messaging**, is an asynchronous communication model that makes it easy for developers to build highly functional and architecturally complex applications in the cloud. In modern cloud architecture, applications are decoupled into smaller, independent building blocks called services. Pub/sub messaging provides instant event notifications for these distributed systems. It supports scalable and reliable communication between independent software modules.
+    - **Application-to-Application (A2A)** Integration (or Enterprise Application Integration) connects applications and business processes within the same organization to streamline operations.
+    - **Application-to-Person (A2P)** Messaging is the automated process of sending mobile messages from a business application to a user, typically for marketing or service notifications.
 
 
 Amazon SNS simplifies **A2A** messaging by separating publishers from subscribers, which supports microservices, distributed systems, and serverless applications. Messages are sent to Amazon SNS topics, where they can be filtered and delivered to subscribers like Lambda, Amazon SQS, or HTTP endpoints. If delivery fails, the messages are stored in a dead-letter queue for further analysis or reprocessing.
@@ -246,10 +248,8 @@ Amazon SNS **A2P** messaging lets you to deliver notifications and alerts direct
 **Usage:**
 - Integrate your applications with FIFO messaging:
     * Deliver messages in a strictly ordered, first in, first out (FIFO) manner to maintain accuracy and consistency across independent applications.
-- Learn more about message ordering and deduplication:
-    * Securely encrypt notification message delivery.
-- Encrypt messages with AWS Key Management Service (KMS), ensure traffic privacy with AWS PrivateLink, and control access with resource policies and tags.:
-    * Learn more about security and message encryption.
+- Securely encrypt notification message delivery.
+    * Encrypt messages with AWS Key Management Service (KMS), ensure traffic privacy with AWS PrivateLink, and control access with resource policies and tags.:
 - Capture and fan out events from over 60 AWS services:
     * Fan out events across AWS categories, such as analytics, compute, containers, databases, IoT, machine learning (ML), security, and storage.
 
@@ -267,13 +267,13 @@ Serverless means the user cannot see or access the underlying infrastructure or 
 - High availability,
 - Maintenance.
 
-##### **Container:[wiki]**
-*In software engineering, containerization is operating-system–level virtualization or application-level virtualization over multiple network resources so that software applications can run in isolated user spaces called **containers** in any cloud or non-cloud environment, regardless of type or vendor.*
+##### **Container: [wiki]**
+*In software engineering, **containerization** is operating-system-level virtualization or application-level virtualization over multiple network resources so that software applications can run in isolated user spaces called **containers** in any cloud or non-cloud environment, regardless of type or vendor.*
 
-*Each **container** is basically a fully functional and portable cloud or non-cloud computing environment surrounding the application and keeping it independent of other environments running in parallel.[3] Individually, each container simulates a different software application and runs isolated processes by bundling related configuration files, libraries and dependencies. But, collectively, multiple containers share a common operating system kernel (OS).*
+*Each **container** is basically a fully functional and portable cloud or non-cloud computing environment surrounding the application and keeping it independent of other environments running in parallel. Individually, each container simulates a different software application and runs isolated processes by bundling related configuration files, libraries and dependencies. But, collectively, multiple containers share a common operating system kernel (OS).*
 
 ##### **Orchestration:**
-*In system administration, orchestration is the automated configuration, coordination,[1] deployment, development, and management of computer systems and software [wiki].*
+*In system administration, orchestration is the automated configuration, coordination, deployment, development, and management of computer systems and software [wiki].*
 
 AWS has several serverless compute options, such as **Lambda**.
 
