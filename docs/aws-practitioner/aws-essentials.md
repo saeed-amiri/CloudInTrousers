@@ -11,12 +11,12 @@ When a user tries to access a website or file, several steps occur in the backgr
 
    1. The user enters a URL (Uniform Resource Locator) into their web browser. This prompts the browser to send a request to the DNS (Domain Name System) server to locate the corresponding web server.
    2. The DNS server searches for the IP address linked to the requested domain.
-   3. Once found, the DNS server returns the web server's IP address to the browser.
-   4. The browser then sends an HTTP/HTTPS request to the identified web server's IP address.
+   3. Once found, the DNS server returns the web server's IP (Internet Protocol) address to the browser.
+   4. The browser then sends an HTTP/HTTPS (Hypertext Transfer Protocol/Hypertext Transfer Protocol Secure) request to the identified web server's IP address.
    5. The web server processes the request and responds by sending the required files (such as HTML, CSS, JavaScript, and media files) back to the browser.
    6. The browser interprets these files and constructs the webpage using various components:
       *  DOM (Document Object Model) interpreter for structuring the page.
-      *  CSS interpreter for styling and layout.
+      *  CSS (Cascading Style Sheets) interpreter for styling and layout.
       *  JavaScript engine for dynamic interactions.
       *  These are optimized by JIT (Just-In-Time) compilation for better performance.
    7. Finally, the fully rendered website is displayed to the user.
@@ -65,8 +65,8 @@ When a user tries to access a website or file, several steps occur in the backgr
 **Benefits of EC2:**
 1. **Access reliable, scalable (SLA)** infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
 2. Provide **secure** compute for your applications. Security is built into the foundation of Amazon EC2 with the `AWS Nitro` System,
-    * The Nitro System is a collection of hardware and software components built by AWS that enable high performance, high availability, and high security. 
-3. **Optimize performance and cost:** Migrate and build apps with ease using AWS Migration Tools, AWS Managed Services, or `Amazon Lightsail`. Learn how AWS can help:
+    * The `AWS Nitro` System is a collection of hardware and software components built by AWS that enable high performance, high availability, and high security. 
+3. **Optimize performance and cost:** Migrate and build apps with ease using AWS Migration Tools, AWS Managed Services, or `Amazon Lightsail`:
     * `Amazon Lightsail` is a powerful virtual server that is built for reliability and performance. Intuitive management console with preconfigured Linux and Windows application stacks. Virtual private Cloud. Easily Manage Clusters. No Upfront Commitment. Highly Scalable.
 
 
@@ -216,7 +216,7 @@ A **monolithic application** integrates all functionality into a **single deploy
 Microservices introduce **operational complexity** with more components to test, deploy, and manage. Early in development, a monolithic approach helps **avoid unnecessary overhead** until the product proves its value.
 
 #### **How it Helps**
-A well-structured monolith follows **lean development principles**, enabling a **quick launch with minimal complexity**. Once successful, it can be **gradually refactored into microservices**. Premature microservices adoption can **waste engineering effort** if the application doesn’t succeed.
+A well-structured monolith follows **lean development principles**, enabling a **quick launch with minimal complexity**. Once successful, it can be **gradually refactored into microservices**. Premature microservices adoption can **waste engineering effort** if the application doesn't succeed.
 
 ### **Amazon Simple Queue Service (SQS):**
 
@@ -231,7 +231,7 @@ A well-structured monolith follows **lean development principles**, enabling a *
 - **Security:**
     * Securely send sensitive data between applications and centrally manage your keys using AWS Key Management.
 - **Cost-effective scalability:**
-    * Scale elastically and cost-effectively based on usage so you don’t have to worry about capacity planning and preprovisioning.
+    * Scale elastically and cost-effectively based on usage so you don't have to worry about capacity planning and preprovisioning.
 
 #### **Amazon Simple Notification Service (SNS):**
 
@@ -249,9 +249,10 @@ Amazon SNS **A2P** messaging lets you to deliver notifications and alerts direct
 - Integrate your applications with FIFO messaging:
     * Deliver messages in a strictly ordered, first in, first out (FIFO) manner to maintain accuracy and consistency across independent applications.
 - Securely encrypt notification message delivery.
-    * Encrypt messages with AWS Key Management Service (KMS), ensure traffic privacy with AWS PrivateLink, and control access with resource policies and tags.:
+    * Encrypt messages with AWS Key Management Service (KMS), ensure traffic privacy with AWS PrivateLink, and control access with resource policies and tags.
 - Capture and fan out events from over 60 AWS services:
     * Fan out events across AWS categories, such as analytics, compute, containers, databases, IoT, machine learning (ML), security, and storage.
+        - The term IoT, or Internet of Things, refers to the collective network of connected devices and the technology that facilitates communication between devices and the cloud, as well as between the devices themselves.
 
 ## **Additional Compute Services:**
 With EC2, user is responsible for:
@@ -268,12 +269,12 @@ Serverless means the user cannot see or access the underlying infrastructure or 
 - Maintenance.
 
 ##### **Container: [wiki]**
-*In software engineering, **containerization** is operating-system-level virtualization or application-level virtualization over multiple network resources so that software applications can run in isolated user spaces called **containers** in any cloud or non-cloud environment, regardless of type or vendor.*
+* *In software engineering, **containerization** is operating-system-level virtualization or application-level virtualization over multiple network resources so that software applications can run in isolated user spaces called **containers** in any cloud or non-cloud environment, regardless of type or vendor.*
 
-*Each **container** is basically a fully functional and portable cloud or non-cloud computing environment surrounding the application and keeping it independent of other environments running in parallel. Individually, each container simulates a different software application and runs isolated processes by bundling related configuration files, libraries and dependencies. But, collectively, multiple containers share a common operating system kernel (OS).*
+* *Each **container** is basically a fully functional and portable cloud or non-cloud computing environment surrounding the application and keeping it independent of other environments running in parallel. Individually, each container simulates a different software application and runs isolated processes by bundling related configuration files, libraries and dependencies. But, collectively, multiple containers share a common operating system kernel (OS).*
 
 ##### **Orchestration:**
-*In system administration, orchestration is the automated configuration, coordination, deployment, development, and management of computer systems and software [wiki].*
+* *In system administration, orchestration is the automated configuration, coordination, deployment, development, and management of computer systems and software [wiki].*
 
 AWS has several serverless compute options, such as **Lambda**.
 
@@ -312,7 +313,7 @@ Amazon Elastic Container Service (Amazon ECS) is a fully managed container orche
 - Increase speed and agility:
     * Deploy faster and focus on your applications by using Amazon ECS with AWS Fargate serverless compute for containers.
 - Optimize for security and compliance:
-    *Build on Amazon ECS with confidence, knowing that the security, compliance, and architecture meet regulatory standards.
+    * Build on Amazon ECS with confidence, knowing that the security, compliance, and architecture meet regulatory standards.
 
 
 ##### **Use cases:**
@@ -327,7 +328,7 @@ Amazon Elastic Container Service (Amazon ECS) is a fully managed container orche
 
 
 #### **Amazon Elastic Kubernetes Service (EKS):**
-*A **Kubernetes** is an open-source container orchestration system for automating software deployment, scaling, and management [wiki].*
+* *A **Kubernetes** is an open-source container orchestration system for automating software deployment, scaling, and management [wiki].*
 
 Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed Kubernetes service that enables you to run Kubernetes seamlessly in both AWS Cloud and on-premises data centers.
 
