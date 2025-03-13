@@ -1,12 +1,12 @@
 # Module 3: Global Infrastructure and Reliability
-In this module is all about:
+This module is all about:
 - The benefits of the AWS Global Infrastructure,
 - Describing the basic concept of Availability Zones,
 - Describing the benefits of Amazon CloudFront and edge locations,
 - Comparing different methods for provisioning AWS services.
 
 ## AWS Global Infrastructure
-### Factors to Chose a Region:
+### Factors to Choose a Region:
 1. Compliance,
 2. Proximity,
 3. Feature availability,
@@ -28,9 +28,10 @@ The term *cache* primarily refers to something that is hidden or stored away. Mo
 A content delivery network is a system of interconnected servers that accelerates webpage loading for data-heavy applications. It can also be referred to as a content distribution network [AWS].
 
 ### CloudFront  
-Amazon CloudFront is a CDN service operated by Amazon Web Services. It creates a globally distributed network of proxy servers to cache content—such as web videos or other large media files—closer to consumers, thereby improving download speeds [wiki]. CloudFront accelerates the delivery of both static and dynamic web content (e.g., .html, .css, .js, and image files) by utilizing a worldwide network of data centers known as edge locations. When a user requests content:  
-- If the content is already present at the edge location with the lowest latency, it is delivered immediately.  
-- If not, CloudFront retrieves the content from an origin specified by you, such as an Amazon S3 bucket, a MediaPackage channel, or an HTTP server that stores the definitive version of the content [[AWS_Docs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)].
+- Amazon CloudFront is a CDN service operated by Amazon Web Services. It creates a globally distributed network of proxy servers to cache content—such as web videos or other large media files—closer to consumers, thereby improving download speeds [wiki].
+- CloudFront accelerates the delivery of both static and dynamic web content (e.g., .html, .css, .js, and image files) by utilizing a worldwide network of data centers known as edge locations. When a user requests content:
+  - If the content is already present at the edge location with the lowest latency, it is delivered immediately,
+  - If not, CloudFront retrieves the content from an origin specified by you, such as an Amazon S3 bucket, a MediaPackage channel, or an HTTP server that stores the definitive version of the content [[AWS_Docs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)].
 
 ## How to Provision AWS Resources?
 **Ways to interact with AWS services:**
@@ -42,13 +43,15 @@ Amazon CloudFront is a CDN service operated by Amazon Web Services. It creates a
     * DKs enable us to use AWS services with our existing applications or create entirely new applications that will run on AWS.
 
 ### AWS Management Tools:
-- **AWS Elastic Beanstalk:**  With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
+- **AWS Elastic Beanstalk:**
+- *AWS Elastic Beanstalk is an orchestration service offered by Amazon Web Services for deploying applications which orchestrates various AWS services, including EC2, S3, Simple Notification Service (SNS), CloudWatch, autoscaling, and Elastic Load Balancers. Elastic Beanstalk provides an additional layer of abstraction over the bare server and OS;[wiki]*
+- With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
     * Adjust capacity
     * Load balancing
     * Automatic scaling
     * Application health monitoring
 
-### AWS CloudFormation
+### AWS CloudFormation:
 
 **Benefits:**
 
