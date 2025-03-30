@@ -53,9 +53,9 @@ An instance store provides **temporary block-level storage for your EC2 instance
 
 | **Storage Class**                                  | **Purpose/Use Case**                                                                                  | **Availability & Durability**                                           | **Key Features**                                                                       |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| **S3 Standard**                                    | Frequently accessed data (e.g., websites, analytics, content distribution)                            | Stored across **3+ Availability Zones**, 11 nines durability            | High availability, low latency, higher cost                                            |
-| **S3 Standard-Infrequent Access (S3 Standard-IA)** | Infrequently accessed, but needs rapid access (e.g., backups, DR files)                               | Stored across **3+ Availability Zones**, same durability as Standard    | Lower storage price, higher retrieval cost                                             |
-| **S3 One Zone-Infrequent Access (S3 One Zone-IA)** | Infrequent data, can tolerate AZ failure (non-critical, reproducible data)                            | Stored in **1 Availability Zone**, lower durability                     | Lower cost than Standard-IA, suitable when replication isn’t critical                  |
+| **S3 Standard**                                    | Frequently accessed data (e.g., websites, analytics, content distribution)                            | Stored across **3+ Availability Zones (AZs)**, 11 nines durability            | High availability, low latency, higher cost                                            |
+| **S3 Standard-Infrequent Access (S3 Standard-IA)** | Infrequently accessed, but needs rapid access (e.g., backups, DR files)                               | Stored across **3+ AZs**, same durability as Standard    | Lower storage price, higher retrieval cost                                             |
+| **S3 One Zone-Infrequent Access (S3 One Zone-IA)** | Infrequent data, can tolerate AZ failure (non-critical, reproducible data)                            | Stored in **1 AZs**, lower durability                     | Lower cost than Standard-IA, suitable when replication isn’t critical                  |
 | **S3 Intelligent-Tiering**                         | Data with unknown or changing access patterns                                                         | Stored in **multiple AZs**, 11 nines durability                         | Auto-moves between frequent and infrequent tiers based on access; small monitoring fee |
 | **S3 Glacier Instant Retrieval**                   | Archive data needing **immediate retrieval** (e.g., media archives with quick access needs)           | Stored in **3+ AZs**, same durability as Standard                       | Millisecond retrieval time, lower cost than Standard                                   |
 | **S3 Glacier Flexible Retrieval**                  | Low-cost archival data, retrieved in **minutes to hours** (e.g., older photos, customer records)      | Stored in **3+ AZs**, high durability                                   | Retrieval time: **1 min to 12 hours**, optional vault locks for compliance             |
@@ -107,7 +107,7 @@ An instance store provides **temporary block-level storage for your EC2 instance
   
 - **Type:** File Storage Service.
 - **Scaling:** **Automatically grows or shrinks** as files are added/removed, up to **petabytes**.
-- **Availability:** **Regional** (spanning **multiple Availability Zones**).
+- **Availability:** **Regional** (spanning **multiple AZs**).
 - **Access:** Supports **simultaneous access** from multiple EC2 instances, services, and even **on-premises servers** via **AWS Direct Connect**.
 - **Use Cases:**  
   - Web serving & content management systems  
@@ -154,7 +154,7 @@ An instance store provides **temporary block-level storage for your EC2 instance
 | **Compatibility**                       | **MySQL** and **PostgreSQL** compatible                                                          |
 | **Performance**                         | - Up to **5x faster than standard MySQL**   <br>- Up to **3x faster than standard PostgreSQL**   |
 | **Cost Efficiency**                     | Reduces unnecessary **I/O operations** to lower costs                                            |
-| **High Availability**                   | - **6 copies of data replicated across 3 Availability Zones (AZs)**  <br>- Continuous backup to **Amazon S3** |
+| **High Availability**                   | - **6 copies of data replicated across 3 AZs**  <br>- Continuous backup to **Amazon S3** |
 | **Use Case**                            | Ideal for applications requiring **high performance & high availability**                        |
 
 - **Amazon RDS** handles the **heavy lifting** of relational database management—perfect if you want scalability without worrying about infrastructure.
