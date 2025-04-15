@@ -1,4 +1,4 @@
-# Module 10:
+# Module 10: The Cloud Journey
 - Summarize the six pillars of the **Well-Architected Framework**.  
 - Explain the six benefits of cloud computing. 
 
